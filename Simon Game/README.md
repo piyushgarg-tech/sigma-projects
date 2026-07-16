@@ -2,7 +2,7 @@
 
 A classic Simon Memory Game built with **HTML, CSS, and JavaScript**.
 
-🔗 **Live Demo:** https://simongame-amber.vercel.app
+🌐 **Live Demo:** https://simon-game-taupe-ten.vercel.app/
 
 ## 🎮 How to Play
 
@@ -17,8 +17,8 @@ A classic Simon Memory Game built with **HTML, CSS, and JavaScript**.
 
 - Username support
 - Level-based scoring
-- High score with player name
 - High score saved using Local Storage
+- High score persists after page refresh
 - Keyboard and mobile touch support
 - Responsive design
 
