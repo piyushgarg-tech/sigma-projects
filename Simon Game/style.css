@@ -1,9 +1,25 @@
 body{
     text-align:center;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 8px;
+}
+
+h2{
+    color: #555;
+    font-size: 1.3rem;
 }
 
 .player-name, .high-score {
     font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
 }
 
 .btn{
@@ -12,6 +28,12 @@ body{
     border-radius:20%;
     border:10px solid black;
     margin:2.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 
 .btn-container{
