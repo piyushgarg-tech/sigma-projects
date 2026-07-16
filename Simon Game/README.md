@@ -1,37 +1,39 @@
-# Simon Game
+# 🎮 Simon Game
 
-A simple Simon Game made with HTML, CSS, and JavaScript.
+A classic Simon Memory Game built with **HTML, CSS, and JavaScript**.
 
-## How to Play
+🔗 **Live Demo:** https://simongame-amber.vercel.app
 
-1. Open the game in a browser.
-2. Enter your username.
-3. Press any key on desktop or tap the screen on mobile to start.
-4. Watch the button color that flashes.
-5. Click the same color button.
-6. Every new level adds one more color to the sequence.
-7. If you click the wrong color, the game is over.
+## 🎮 How to Play
 
-## Features
+1. Enter your username.
+2. Press any key (desktop) or tap anywhere (mobile) to start.
+3. Watch the flashing color sequence.
+4. Repeat the sequence by clicking the correct buttons.
+5. Each level adds one more color.
+6. A wrong click ends the game.
 
-- Username is shown while playing.
-- Current level is used as the score.
-- High score shows the username and score.
-- High score stays saved after refreshing the page.
-- Works with keyboard on desktop and touch on mobile.
+## ✨ Features
 
-## Files
+- Username support
+- Level-based scoring
+- High score with player name
+- High score saved using Local Storage
+- Keyboard and mobile touch support
+- Responsive design
 
-- `index.html` - Game structure
-- `style.css` - Game design and button colors
-- `app.js` - Game logic
+## 📂 Files
 
-## How to Run
+- `index.html` – Structure
+- `style.css` – Styling
+- `app.js` – Game logic
 
-Open `index.html` in any web browser.
+## 🚀 Run Locally
 
-## Technologies Used
+Clone the repository and open `index.html` in your browser.
 
-- HTML
-- CSS
-- JavaScript
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
