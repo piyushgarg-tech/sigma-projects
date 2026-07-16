@@ -5,8 +5,25 @@ let btns=["yellow","red","purple","green"];
 
 let started = false;
 let level = 0;
+let userName = prompt("Enter your username");
+let highScore = localStorage.getItem("highScore") || 0;
+let highScoreName = localStorage.getItem("highScoreName") || "";
 
 let h2 = document.querySelector("h2");
+let highScoreDisplay = document.querySelector(".high-score");
+let userNameDisplay = document.querySelector(".player-name");
+
+while (userName == "" || userName == null) {
+    userName = prompt("Enter your username");
+}
+
+userNameDisplay.innerText = `Player: ${userName}`;
+
+if (highScore > 0) {
+    highScoreDisplay.innerText = `High Score: ${highScoreName} - ${highScore}`;
+} else {
+    highScoreDisplay.innerText = "High Score: No score yet";
+}
 
 function startGame() {
     if (!started) {
@@ -51,7 +68,14 @@ function checkAns(idx){
             setTimeout(levelUp,1000); 
         }
     } else{
-        h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
+        if (level > highScore) {
+            highScore = level;
+            highScoreName = userName;
+            localStorage.setItem("highScore", highScore);
+            localStorage.setItem("highScoreName", highScoreName);
+            highScoreDisplay.innerText = `High Score: ${highScoreName} - ${highScore}`;
+        }
+        h2.innerHTML = `Game Over, <b>${userName}</b>! Your score was <b>${level}</b> <br> Press any key to start.`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor="white";

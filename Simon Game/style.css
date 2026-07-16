@@ -2,6 +2,10 @@ body{
     text-align:center;
 }
 
+.player-name, .high-score {
+    font-weight: bold;
+}
+
 .btn{
     height:200px;
     width:200px;
